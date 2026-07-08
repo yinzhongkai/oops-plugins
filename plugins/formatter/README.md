@@ -4,7 +4,7 @@
 
 ## 1. 功能
 
-- 统一排版：标题空行、列表符号、代码块、表格对齐、段落空行、行尾空格
+- 统一排版：标题空行、列表符号、代码块、表格对齐、段落空行、行尾空格、中文标点
 - 修正/补全章节编号（`1.` ↔ `##`、`1.1` ↔ `###` 等）
 - 规范文件路径标注（行内代码）与文件列表自然序排序
 - 只改格式与结构，不改语义内容
@@ -19,14 +19,14 @@
 /plugin install formatter@oops-plugins
 
 # 本地
-/plugin marketplace add C:\Users\zhongkai.yin\Desktop\claude-plugins
+/plugin marketplace add <path-to-oops-plugins>
 /plugin install formatter@oops-plugins
 ```
 
 或开发期本地直接加载单插件：
 
 ```bash
-cc --plugin-dir C:\Users\zhongkai.yin\Desktop\claude-plugins\plugins\formatter
+cc --plugin-dir <path-to-oops-plugins>/plugins/formatter
 ```
 
 ## 3. 使用

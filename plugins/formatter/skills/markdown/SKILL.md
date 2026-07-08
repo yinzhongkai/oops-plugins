@@ -24,8 +24,9 @@ description: This skill should be used when the user asks to "format markdown", 
 ## 4. 工作流程
 
 1. 解析参数确定目标（单文件或目录）。目录用 Glob 递归匹配 `**/*.md`。
-2. 逐个文件处理：用 Read 读取全文 → 应用下述规则 → 用 Write 写回完整文件。
-3. 处理完成后汇总：列出改动文件数与每处主要改动类型，不做逐行 diff。
+2. **先读取 `references/formatting-rules.md` 作为参考**，再逐个文件处理。
+3. 逐个文件处理：用 Read 读取全文 → 应用下述规则 → 用 Write 写回完整文件。
+4. 处理完成后汇总：列出改动文件数与每处主要改动类型，不做逐行 diff。
 
 ## 5. 核心规则
 
