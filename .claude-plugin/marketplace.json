@@ -1,0 +1,11 @@
+{
+  "name": "oops-plugins",
+  "description": "Claude 插件大杂烩",
+  "owner": {
+    "name": "oops",
+    "email": "yinzhongkai@yeah.net"
+  },
+  "plugins": [
+  ]
+}
+
