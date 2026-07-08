@@ -1,6 +1,6 @@
 ---
 name: markdown
-description: This skill should be used when the user asks to "format markdown", "格式化 markdown", "规范这个 md", "tidy up markdown", "整理 markdown 文档", or invokes /formatter:markdown. Reformats Markdown files for consistent layout and structural numbering without changing semantic content.
+description: Trigger when the user asks to format Markdown (e.g. "format markdown", "格式化 markdown", "规范这个 md", "tidy up markdown", "整理 markdown 文档") or invokes /formatter:markdown. Reformats Markdown files for consistent layout, structural numbering, and Chinese punctuation without changing semantic content.
 ---
 
 # Markdown 格式化
@@ -32,7 +32,7 @@ description: This skill should be used when the user asks to "format markdown", 
 
 完整规则见 `references/formatting-rules.md`。**执行前务必加载该参考文件**，按其文档结构规则与排版规则逐条应用。概览：
 
-- **1. 文档结构规则（1.1-1.4）**：章节编号层级与连续化、编号适用范围、文件路径行内代码标注、文件列表自然序排序。含子章节的文档主动为全文加编号（不区分原文是否已有编号）；非数字编号（中文序号/字母）统一转纯数字；改编号后同步更新同文件及同插件目录下的跨文件引用；仅单章无子章节不加编号。
+- **1. 文档结构规则（1.1-1.4）**：章节编号层级与连续化、编号适用范围、文件路径行内代码标注、文件列表自然序排序。含子章节的文档主动为全文加编号（不区分原文是否已有编号）；非数字编号（中文序号/字母）统一转纯数字；改编号后同步更新同文件及目标目录下的跨文件引用；仅单章无子章节不加编号。
 - **2. 排版规则（2.1-2.7）**：标题、列表、代码块、表格、段落/空行、行内格式、中文标点。
 
 ## 6. 行为约束
