@@ -1,0 +1,13 @@
+{
+  "name": "formatter",
+  "version": "0.1.0",
+  "description": "对 Markdown 文件做格式化与结构编号规范化",
+  "author": {
+    "name": "oops",
+    "email": "yinzhongkai@yeah.net"
+  },
+  "license": "MIT",
+  "homepage": "https://gitee.com/nullstack/oops-plugins",
+  "repository": "https://gitee.com/nullstack/oops-plugins.git",
+  "keywords": ["markdown", "format", "formatter", "documentation"]
+}

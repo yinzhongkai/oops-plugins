@@ -6,6 +6,13 @@
     "email": "yinzhongkai@yeah.net"
   },
   "plugins": [
+    {
+      "name": "formatter",
+      "description": "对 Markdown 文件做格式化与结构编号规范化，纯规则内置零依赖。统一排版、修正章节编号、规范路径标注与文件列表排序，只改格式不改语义。",
+      "category": "productivity",
+      "source": "./plugins/formatter",
+      "homepage": "https://gitee.com/nullstack/oops-plugins"
+    }
   ]
 }
 
