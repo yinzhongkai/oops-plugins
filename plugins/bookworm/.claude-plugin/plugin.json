@@ -1,0 +1,13 @@
+{
+  "name": "bookworm",
+  "version": "0.1.0",
+  "description": "通用的「读透经典书」方法论工具。通过拆解、全局框架、章节预读、精读释疑、巩固检验五环节闭环，帮助读者真正读透难啃的经典书——先有全局地图再深入细节，带着问题读原文，最后用自己的话产出可发布文稿。需 Python 环境解析 EPUB。",
+  "author": {
+    "name": "yinzhongkai",
+    "email": "yinzhongkai@yeah.net"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/yinzhongkai/oops-plugins",
+  "repository": "https://github.com/yinzhongkai/oops-plugins.git",
+  "keywords": ["reading", "study", "book", "learning", "methodology", "feynman"]
+}

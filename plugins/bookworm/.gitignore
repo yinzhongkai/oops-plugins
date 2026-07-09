@@ -1,0 +1,11 @@
+# Python（EPUB 解析脚本运行时生成）
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 书目原文与阅读产物（用户本地数据，不应入库）
+# 注：书名目录由用户自行决定是否纳入版本控制
+books/
+
+# 本地配置
+.claude/*.local.md
