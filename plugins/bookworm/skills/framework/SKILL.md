@@ -25,7 +25,7 @@ description: This skill should be used when the user invokes "/bookworm:framewor
 
 ### 4.1 分批顺序读取全部章节
 
-**单 agent 顺序读 + 分批策略**（不并行）：读 3-4 章后做阶段性小结，再读下一批。边读边累积全局感，使提炼更准确。避免并行子 agent——它们缺乏全局视野，且 framework 的难点在"合"不在"分"。
+**单 agent 顺序读 + 分批策略**（不并行）：读 3-4 章后做阶段性小结，再读下一批。边读边累积全局感，使提炼更准确。避免并行子 agent——它们缺乏全局视野，且 framework 的难点在“合”不在“分”。
 
 ### 4.2 提炼全局框架
 
@@ -61,12 +61,12 @@ description: This skill should be used when the user invokes "/bookworm:framewor
 
 ### 4.4 登记 progress
 
-在 progress.md "环节记录"表追加：② 全局框架完成。
+在 progress.md “环节记录”表追加：② 全局框架完成。
 
 ## 5. 注意
 
 - **framework 是地图不是摘要**：提炼结构和脉络，不逐章复述内容。详细内容留给预读和精读。
-- **全局视角先行**：这正是"先有全局视角再深入细节"的体现。后续 pre-read 和 explain 引用本文件来定位单章在全书的位置。
+- **全局视角先行**：这正是“先有全局视角再深入细节”的体现。后续 pre-read 和 explain 引用本文件来定位单章在全书的位置。
 - **大书**：若章节数多导致读取量大，分批策略已覆盖；仍卡顿可只读每章首尾段做粗框架，但须告知用户做了简化。
 
 ## 6. 完成后

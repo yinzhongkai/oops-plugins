@@ -11,7 +11,7 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 - 用户运行 `/bookworm:pre-read [章号]`
 - 用户准备读某章，想要预读导览
-- 用户问"这章大概讲什么结构"
+- 用户问“这章大概讲什么结构”
 
 ## 2. 输入
 
@@ -30,16 +30,16 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ### 4.2 提炼骨架
 
-给出本章的**结构骨架**——不是内容摘要，而是"这章在讲什么、分几个部分、核心论点是什么"。一句话点出本章在全书论证中的位置（引用 framework.md）。
+给出本章的**结构骨架**——不是内容摘要，而是“这章在讲什么、分几个部分、核心论点是什么”。一句话点出本章在全书论证中的位置（引用 framework.md）。
 
 ### 4.3 生成引导问题
 
 生成 3-5 个引导问题，供用户带着读原文。问题设计原则：
 
-- **指向关键点但不剧透**：问题问"作者为什么认为X？"而非直接给出答案。
+- **指向关键点但不剧透**：问题问“作者为什么认为X？”而非直接给出答案。
 - **引导主动思考**：问题应让用户在读时寻找论证，而非被动接受。
 - **关联前后文**：至少一个问题串联本章与前后章的关系（借 framework.md）。
-- **不给答案**：问题的价值在于"带着它去原文找"，提前给答案就破坏了。
+- **不给答案**：问题的价值在于“带着它去原文找”，提前给答案就破坏了。
 
 ### 4.4 写 pre-read.md
 
@@ -63,7 +63,7 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ### 4.5 登记 progress
 
-在 progress.md "环节记录"表追加：③ 预读 章 X 完成。
+在 progress.md “环节记录”表追加：③ 预读 章 X 完成。
 
 ## 5. 铁律：给地图不给答案
 
@@ -75,4 +75,4 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ## 7. 参考资源
 
-- **`../methodology/references/cycle.md`** — 三条铁律之一即"给地图不给答案"。
+- **`../methodology/references/cycle.md`** — 三条铁律之一即“给地图不给答案”。

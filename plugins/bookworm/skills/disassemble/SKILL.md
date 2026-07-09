@@ -11,7 +11,7 @@ description: This skill should be used when the user invokes "/bookworm:disassem
 
 - 用户运行 `/bookworm:disassemble <原文路径> <书名>`
 - 用户提供书文件路径，要求拆解成章节
-- 用户说"我要开始读这本书"并给出原文文件
+- 用户说“我要开始读这本书”并给出原文文件
 
 ## 2. 输入
 
@@ -52,11 +52,11 @@ description: This skill should be used when the user invokes "/bookworm:disassem
 
 ### 3.5 登记 progress.md
 
-在书名目录下创建 `progress.md`，写入书名、目录名、拆解时间、章节数，并初始化"环节记录"表，记录 ① 拆解完成。结构见 `../methodology/references/cycle.md`。
+在书名目录下创建 `progress.md`，写入书名、目录名、拆解时间、章节数，并初始化“环节记录”表，记录 ① 拆解完成。结构见 `../methodology/references/cycle.md`。
 
 ## 4. 章节标记识别要点
 
-支持中文"第X章"、英文"Chapter X"、Markdown 标题、独立行标题（兜底）。详见 `references/chapter-splitting.md` 的正则与样例。
+支持中文“第X章”、英文“Chapter X”、Markdown 标题、独立行标题（兜底）。详见 `references/chapter-splitting.md` 的正则与样例。
 
 - 中文数字需转阿拉伯数字作为章号。
 - 提取不出数字时按标记出现顺序编号。
