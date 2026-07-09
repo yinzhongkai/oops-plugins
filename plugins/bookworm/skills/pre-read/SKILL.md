@@ -15,7 +15,7 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ## 2. 输入
 
-- **章号**（可选）：如 `3` 或 `ch03`。未提供则读 progress.md 看下一未预读章，或交互询问。
+- **章号**（可选）：如 `3` 或 `ch03`，作用于当前书（当前书的确定见 `../methodology/references/cycle.md` 第 4 节）。未提供章号则读 progress.md 看下一未预读章，或交互询问。
 
 ## 3. 前置检查
 

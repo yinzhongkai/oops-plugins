@@ -1,6 +1,6 @@
 ---
 name: methodology
-description: This skill should be used when the user asks to "读透一本书", "怎么开始读", "读到哪了", "接下来读什么", "读完没收获", "不知道接下来读哪一步", "阅读流程", "read through a book", or expresses confusion about where they are in reading a book. Acts as the navigator for the bookworm closed loop: locates which of the five phases the user is in and routes them to the correct skill. 触发于用户对阅读流程或阅读进度的整体询问、或表达"读完没有收获感"等迷茫时。
+description: This skill should be used when the user asks to "读透一本书", "怎么开始读", "读到哪了", "接下来读什么", "读完没收获", "不知道接下来读哪一步", "阅读流程", "read through a book", or expresses confusion about where they are in reading a book. Acts as the navigator for the bookworm closed loop, locating which of the five phases the user is in and routing them to the correct skill. 触发于用户对阅读流程或阅读进度的整体询问、或表达"读完没有收获感"等迷茫时。
 ---
 
 # 读透闭环总览

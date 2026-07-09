@@ -1,6 +1,6 @@
 ---
 name: consolidate
-description: This skill should be used when the user invokes "/bookworm:consolidate", asks to "巩固这一章", "检验我读透了没", "一起回忆这章", "把这章写成文章", "做费曼复述", "consolidate chapter N", "produce a publishable article". Runs the internal gated pipeline: co-recall → Feynman recount → cross-chapter linking → publishable article. Verifies understanding before allowing the article. 触发于读完一章后做巩固检验、产出可发布文稿时。
+description: This skill should be used when the user invokes "/bookworm:consolidate", asks to "巩固这一章", "检验我读透了没", "一起回忆这章", "把这章写成文章", "做费曼复述", "consolidate chapter N", "produce a publishable article". Runs the internal gated pipeline (co-recall → Feynman recount → cross-chapter linking → publishable article). Verifies understanding before allowing the article. 触发于读完一章后做巩固检验、产出可发布文稿时。
 ---
 
 # 巩固检验
@@ -15,7 +15,7 @@ description: This skill should be used when the user invokes "/bookworm:consolid
 
 ## 2. 输入
 
-- **章号**（可选）：未提供则读 progress.md 看下一未巩固章，或交互询问。
+- **章号**（可选）：作用于当前书（当前书的确定见 `../methodology/references/cycle.md` 第 4 节）。未提供则读 progress.md 看下一未巩固章，或交互询问。
 
 ## 3. 前置检查
 

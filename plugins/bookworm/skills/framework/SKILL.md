@@ -1,6 +1,6 @@
 ---
 name: framework
-description: This skill should be used when the user invokes "/bookworm:framework", asks to "梳理全书框架", "提炼全局结构", "全书在讲什么", "全书的根本问题", "build the book framework", "overview the whole book". Reads all chapters and produces a global view: the fundamental question the book answers, the argument arc, and the logical relationships between chapters. 触发于建立全书全局框架时。
+description: This skill should be used when the user invokes "/bookworm:framework", asks to "梳理全书框架", "提炼全局结构", "全书在讲什么", "全书的根本问题", "build the book framework", "overview the whole book". Reads all chapters and produces a global view — the fundamental question the book answers, the argument arc, and the logical relationships between chapters. 触发于建立全书全局框架时。
 ---
 
 # 全书框架
@@ -15,7 +15,7 @@ description: This skill should be used when the user invokes "/bookworm:framewor
 
 ## 2. 输入
 
-- **书名**（可选）：不带则读 progress.md 中最近拆解的书。定位其 raw/ 目录。
+- **书名**（可选）：不带则按"确定当前书"规则定位（见 `../methodology/references/cycle.md` 第 4 节）。再读取其 raw/ 目录。
 
 ## 3. 前置检查
 
