@@ -30,6 +30,8 @@ organize 把 raw-source.md 归一成 source.md 的详细规则。本文件定义
 
 字段提取自 raw-source.md 各来源已按字段方向留底的内容，organize 做的是**归纳浓缩**，不是重新采集。
 
+frontmatter 各字段来源：选题、来源类型、来源路径或链接取自 raw-source.md 的 frontmatter；整理时间由用户提供或交互确认，**不在 skill 内取系统时间**（与选题命名日期同规）。
+
 ## 2. 三种来源的整理侧重
 
 ### 2.1 book（感悟文档）

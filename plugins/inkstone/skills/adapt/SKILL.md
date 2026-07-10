@@ -34,6 +34,8 @@ description: This skill should be used when the user invokes "/inkstone:adapt", 
 | 知乎 | `references/zhihu.md` | `<选题>/zhihu.md` |
 | 小红书 | `references/xiaohongshu.md` | `<选题>/xiaohongshu.md` |
 
+本表即后端平台登记表——新增平台时在此加一行 + 加 `references/<平台>.md`（详见 `../methodology/references/pipeline.md` 第 6.3 节「前后端对称扩展」）。
+
 执行适配前**必读**对应平台的 reference——它定义该平台的标题/结构/语感/排版/标签等全部规范。SKILL.md 只讲公共工作流，平台差异全在各 reference。
 
 ## 5. 公共适配工作流

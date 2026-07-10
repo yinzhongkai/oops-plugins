@@ -30,6 +30,8 @@ description: This skill should be used when the user invokes "/inkstone:gather",
 | 网址（http/https） | url（链接） | WebFetch 抓取 + 清洗正文 | `references/from-url.md` |
 | 自然语言话题描述 | topic（话题） | WebSearch 搜资料 + 参考竞品 | `references/from-topic.md` |
 
+本表即前端来源登记表——新增来源类型时在此加一行 + 加 `references/<来源>.md`（详见 `../methodology/references/pipeline.md` 第 6.3 节「前后端对称扩展」）。
+
 判断不准时（如路径既是文件又像话题），向用户确认是哪种来源。每种采集手法的详细步骤、清洗规则、健壮性处理见对应 reference。
 
 ## 4. 决定文案归属

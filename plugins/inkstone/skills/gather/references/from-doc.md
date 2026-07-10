@@ -93,7 +93,6 @@ books/<书名>/notes/chXX.consolidate.md
 ## 待深入
 <从感悟文档提取，标注待 adapt 谨慎的点>
 
----
 （若关联了 framework.md / pre-read.md，附关键摘录于此）
 ```
 
