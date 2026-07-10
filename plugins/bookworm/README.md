@@ -27,20 +27,21 @@
 
 ## 4. 书目目录约定
 
-书目原文放在当前项目根目录下，一本书一个目录（英文 kebab-case 目录名，中文名登记在 progress.md）：
+书目原文放在项目根的 `books/` 目录下，一本书一个子目录（英文 kebab-case 目录名，中文名登记在 progress.md）：
 
 ```
 <project>/
-└── intelligent-investor/
-    ├── raw/                       # 按章切分的原文
-    │   ├── ch01.md
-    │   └── ch02.md
-    ├── <原始文件>                 # disassemble 拷贝留底
-    ├── framework.md               # ② 全局框架产物
-    ├── notes/                     # 各环节产物
-    │   ├── ch01.pre-read.md        # ③ 预读产物
-    │   └── ch01.consolidate.md     # ⑤ 成稿产物
-    └── progress.md                # 阅读进度（methodology 判断步骤用）
+└── books/
+    └── intelligent-investor/
+        ├── raw/                       # 按章切分的原文
+        │   ├── ch01.md
+        │   └── ch02.md
+        ├── <原始文件>                 # disassemble 拷贝留底
+        ├── framework.md               # ② 全局框架产物
+        ├── notes/                     # 各环节产物
+        │   ├── ch01.pre-read.md        # ③ 预读产物
+        │   └── ch01.consolidate.md     # ⑤ 成稿产物
+        └── progress.md                # 阅读进度（methodology 判断步骤用）
 ```
 
 ## 5. 环境要求

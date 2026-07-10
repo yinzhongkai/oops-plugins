@@ -50,6 +50,6 @@ Claude **不得独立从原文合成文稿**。若用户在某点讲不出（4.1
 
 ## 5. 成稿后
 
-- 文稿存到 `<书名>/notes/chXX.consolidate.md`。
+- 文稿存到 `books/<书名>/notes/chXX.consolidate.md`。
 - 在 progress.md “环节记录”表追加：⑤ 巩固 章 X 完成（已成稿）。
 - 向用户展示文稿，并提示：可继续下一章（回到 pre-read），或回头补“待深入”部分。

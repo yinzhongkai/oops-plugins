@@ -8,11 +8,11 @@
 
 | 环节 | skill | 触发 | 产物 | 时机 |
 |------|-------|------|------|------|
-| ① 拆解 | disassemble | 斜杠 | `<书名>/raw/chXX.md` + 拷贝的原始文件 + progress.md 初始记录 | 每本书一次 |
-| ② 全局框架 | framework | 斜杠 | `<书名>/framework.md` | 每本书一次 |
-| ③ 章节预读 | pre-read | 斜杠 | `<书名>/notes/chXX.pre-read.md` | 每章一次 |
+| ① 拆解 | disassemble | 斜杠 | `books/<书名>/raw/chXX.md` + 拷贝的原始文件 + progress.md 初始记录 | 每本书一次 |
+| ② 全局框架 | framework | 斜杠 | `books/<书名>/framework.md` | 每本书一次 |
+| ③ 章节预读 | pre-read | 斜杠 | `books/<书名>/notes/chXX.pre-read.md` | 每章一次 |
 | ④ 精读释疑 | explain | 自动 + 斜杠 | 无（对话内即时释疑） | 边读边用 |
-| ⑤ 巩固检验 | consolidate | 斜杠 | `<书名>/notes/chXX.consolidate.md`（可发布文稿） | 读后 |
+| ⑤ 巩固检验 | consolidate | 斜杠 | `books/<书名>/notes/chXX.consolidate.md`（可发布文稿） | 读后 |
 
 另有 `methodology` skill（自动激活）作为路由层，判断用户处于哪一步并引导到对应 skill，本身不干活。
 
@@ -27,31 +27,32 @@
 
 ## 3. 目录约定
 
-书目原文放在当前项目根目录下，一本书一个目录。目录名用英文 kebab-case，中文名登记在 progress.md：
+书目原文放在项目根的 `books/` 目录下，一本书一个子目录。目录名用英文 kebab-case，中文名登记在 progress.md：
 
 ```
 <project>/
-└── <书名-kebab>/              # 如 intelligent-investor
-    ├── <原始文件>              # disassemble 拷贝留底（如 原文.pdf / 原文.epub）
-    ├── raw/                    # 按章切分的原文 md
-    │   ├── ch01.md
-    │   └── ch02.md
-    ├── framework.md           # ② 产物
-    ├── notes/                  # ③ ⑤ 产物
-    │   ├── ch01.pre-read.md
-    │   └── ch01.consolidate.md
-    └── progress.md             # 阅读进度
+└── books/
+    └── <书名-kebab>/          # 如 intelligent-investor
+        ├── <原始文件>          # disassemble 拷贝留底（如 原文.pdf / 原文.epub）
+        ├── raw/                # 按章切分的原文 md
+        │   ├── ch01.md
+        │   └── ch02.md
+        ├── framework.md       # ② 产物
+        ├── notes/              # ③ ⑤ 产物
+        │   ├── ch01.pre-read.md
+        │   └── ch01.consolidate.md
+        └── progress.md         # 阅读进度
 ```
 
 ## 4. 确定当前书
 
 多本书并存时，framework、pre-read、consolidate 等环节若未显式指定书名，需先确定"当前书"。规则：
 
-1. 列出 `<project>/` 下所有书名目录（即包含 `progress.md` 的目录）。
+1. 列出 `<project>/books/` 下所有书名目录（即包含 `progress.md` 的目录）。
 2. 读取各目录 `progress.md` 的拆解时间。
 3. 取**拆解时间最近**的一本作为当前书。
 
-无任何书名目录时，提示用户先运行 `/bookworm:disassemble`。仅一本书时直接用之。各环节 skill 接收的章号均作用于当前书。
+`books/` 目录不存在或其下无任何书名目录时，提示用户先运行 `/bookworm:disassemble`。仅一本书时直接用之。各环节 skill 接收的章号均作用于当前书。
 
 ## 5. progress.md 结构
 

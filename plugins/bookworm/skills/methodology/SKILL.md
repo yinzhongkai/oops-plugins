@@ -30,7 +30,7 @@ description: This skill should be used when the user asks to "读透一本书", 
 
 ### 3.1 有 progress.md 时
 
-读取 `<书名>/progress.md`（书名目录下的进度文件）。根据“环节记录”表中每章的状态判断：
+读取 `books/<书名>/progress.md`（书名目录下的进度文件）。根据“环节记录”表中每章的状态判断：
 
 - **无任何记录** → 用户还没拆解，引导 `/bookworm:disassemble`
 - **只有拆解记录** → 引导 `/bookworm:framework` 建立全局视角

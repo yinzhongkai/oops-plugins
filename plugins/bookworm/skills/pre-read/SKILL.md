@@ -19,7 +19,7 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ## 3. 前置检查
 
-- 确认 `<书名>/raw/chXX.md` 存在。若无则引导拆解。
+- 确认 `books/<书名>/raw/chXX.md` 存在。若无则引导拆解。
 - 若存在 `framework.md`，先读它以定位本章在全书的位置。
 
 ## 4. 执行步骤
@@ -43,7 +43,7 @@ description: This skill should be used when the user invokes "/bookworm:pre-read
 
 ### 4.4 写 pre-read.md
 
-产物存到 `<书名>/notes/chXX.pre-read.md`：
+产物存到 `books/<书名>/notes/chXX.pre-read.md`：
 
 ```markdown
 # 第X章 预读

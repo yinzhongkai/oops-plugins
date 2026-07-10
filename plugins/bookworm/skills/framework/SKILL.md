@@ -19,7 +19,7 @@ description: This skill should be used when the user invokes "/bookworm:framewor
 
 ## 3. 前置检查
 
-- 确认 `<书名>/raw/` 存在且非空。若未拆解，引导用户先运行 `/bookworm:disassemble`。
+- 确认 `books/<书名>/raw/` 存在且非空。若未拆解，引导用户先运行 `/bookworm:disassemble`。
 
 ## 4. 执行步骤
 
@@ -38,7 +38,7 @@ description: This skill should be used when the user invokes "/bookworm:framewor
 
 ### 4.3 写 framework.md
 
-产物存到 `<书名>/framework.md`，结构：
+产物存到 `books/<书名>/framework.md`，结构：
 
 ```markdown
 # 《书名》全局框架

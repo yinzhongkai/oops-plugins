@@ -28,7 +28,7 @@ description: This skill should be used when the user, while reading the original
 
 ### 5.1 定位原文
 
-根据用户给的章号，或用户贴入的片段，从 `<书名>/raw/chXX.md` 读取对应原文，确保释疑基于准确文本。若用户未指定章号，从其引用的片段或上下文推断；推断不出则询问。
+根据用户给的章号，或用户贴入的片段，从 `books/<书名>/raw/chXX.md` 读取对应原文，确保释疑基于准确文本。若用户未指定章号，从其引用的片段或上下文推断；推断不出则询问。
 
 ### 5.2 释疑
 

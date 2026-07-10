@@ -1,6 +1,6 @@
 ---
 name: disassemble
-description: This skill should be used when the user invokes "/bookworm:disassemble", asks to "拆解这本书", "把书拆成章节", "导入一本书", "拆分原文", "parse the book into chapters", or provides a book file path to be split into chapters. Splits a whole book (txt/md/PDF/EPUB) into per-chapter markdown files under <project>/<book-name>/raw/, copying the original file and registering progress. 触发于拆解整本书原文、按章节存档时。
+description: This skill should be used when the user invokes "/bookworm:disassemble", asks to "拆解这本书", "把书拆成章节", "导入一本书", "拆分原文", "parse the book into chapters", or provides a book file path to be split into chapters. Splits a whole book (txt/md/PDF/EPUB) into per-chapter markdown files under <project>/books/<book-name>/raw/, copying the original file and registering progress. 触发于拆解整本书原文、按章节存档时。
 ---
 
 # 拆解整本书
@@ -23,10 +23,10 @@ description: This skill should be used when the user invokes "/bookworm:disassem
 
 ### 3.1 建目录
 
-在当前项目根目录下创建书名目录：
+在项目根的 `books/` 目录下创建书名目录（`books/` 不存在则先创建）：
 
 ```
-<project>/<书名-kebab>/
+<project>/books/<书名-kebab>/
 ├── raw/
 └── notes/
 ```

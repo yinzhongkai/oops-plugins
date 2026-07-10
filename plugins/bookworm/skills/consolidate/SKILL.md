@@ -19,7 +19,7 @@ description: This skill should be used when the user invokes "/bookworm:consolid
 
 ## 3. 前置检查
 
-- 确认 `<书名>/raw/chXX.md` 存在（作共忆校验的事实依据）。
+- 确认 `books/<书名>/raw/chXX.md` 存在（作共忆校验的事实依据）。
 - 若存在 `framework.md` 和 `notes/chXX.pre-read.md`，读它们作关联和定位参考。
 
 ## 4. 内部门控流水线（必须顺序走）
@@ -51,7 +51,7 @@ description: This skill should be used when the user invokes "/bookworm:consolid
 
 走完 4.1-4.3 后，把**用户讲出来的理解**组织成可发布文稿。Claude 只做结构组织 + 文字润色，**不独立从原文合成**。详细规范见 `references/publishing.md`。
 
-产物存到 `<书名>/notes/chXX.consolidate.md`，在 progress.md 追加：⑤ 巩固 章 X 完成。
+产物存到 `books/<书名>/notes/chXX.consolidate.md`，在 progress.md 追加：⑤ 巩固 章 X 完成。
 
 ## 5. 铁律：先验证后成稿
 
