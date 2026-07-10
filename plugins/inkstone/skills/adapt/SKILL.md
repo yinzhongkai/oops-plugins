@@ -1,6 +1,6 @@
 ---
 name: adapt
-description: This skill should be used when the user invokes "/inkstone:adapt", asks to "改成公众号文案", "适配知乎", "写成小红书笔记", "改造成平台文案", "适配 <平台>", "adapt for WeChat/Zhihu/Xiaohongshu", or when source.md is confirmed and the user specifies a target platform. Adapts the confirmed source.md intermediate format into platform-specific copy for WeChat Official Account (公众号), Zhihu (知乎), or Xiaohongshu (小红书), one platform per run as the user specifies. 触发于把确认过的中间格式适配成指定平台文案时。
+description: This skill should be used when the user invokes "/inkstone:adapt", asks to adapt content for a specific platform (e.g., "改成公众号文案", "适配知乎", "写成小红书笔记", "改造成平台文案", "适配 <平台>", "adapt for WeChat/Zhihu/Xiaohongshu"), or when source.md is confirmed and a target platform is specified.
 ---
 
 # 后适配平台

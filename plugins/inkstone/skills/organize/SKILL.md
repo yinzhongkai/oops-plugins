@@ -1,9 +1,9 @@
 ---
 name: organize
-description: This skill should be used when the user invokes "/inkstone:organize", asks to "整理成中间格式", "整理素材", "把素材整理一下", "生成 source.md", "organize the material", or when gather has collected raw material and the next step is to normalize it into the unified intermediate format. Normalizes heterogeneous gathered material (from-doc / from-url / from-topic raw-source.md) into the unified source.md intermediate format, then presents it for user confirmation before adapt. 触发于把采集到的原始素材整理成统一中间格式时。
+description: This skill should be used when the user invokes "/inkstone:organize", asks to "整理成中间格式", "整理素材", "把素材整理一下", "生成 source.md", "转成 source.md", "确认中间格式", "organize the material", or when gather has finished and the next step is to normalize raw-source.md into the unified source.md intermediate format.
 ---
 
-# 中整理素材
+# 整理素材（organize）
 
 把 gather 采集的异构原始素材整理成统一中间格式 source.md，是三阶段流水线的第二步。只整理不创作、不针对任何平台。整理完必须经用户确认才进 adapt。
 
@@ -22,19 +22,20 @@ description: This skill should be used when the user invokes "/inkstone:organize
 
 - 确认选题目录存在、且有 `raw-source.md`（gather 的留底）。无则提示用户先跑 `/inkstone:gather`。
 - 读取 `raw-source.md`，识别来源类型（frontmatter 的 `来源类型` 字段：book / url / topic）。
+- 若选题目录已存在 `source.md`，询问用户是覆盖、追加还是取消，不擅自覆盖。
 
 ## 4. 整理成 source.md
 
 按 `../methodology/references/pipeline.md` 第 5 节的中间格式契约，把 raw-source.md 的内容归一成 source.md 字段。整理规则见 `references/normalize.md`，要点：
 
-| source.md 字段 | 整理方式 |
-|----------------|---------|
-| frontmatter | 选题、来源类型、来源路径或链接、整理时间 |
-| 核心观点 | 浓缩成一句话主轴；话题来源观点缺失时标注待用户确立 |
-| 关键论据素材 | 归纳支撑观点的论据、数据、例子 |
-| 可引用金句 | 挑出适合直接用的原句/感悟 |
-| 受众 | 从素材推断；推断不出则标注待补 |
-| 备注 | 风格倾向、禁忌、平台倾向建议、待深入点 |
+| source.md 字段 | 整理方式 | 来源 / 取值规则 |
+|----------------|---------|----------------|
+| frontmatter | 选题、来源类型、来源路径或链接、整理时间 | 选题与来源类型取自 raw-source.md frontmatter；来源路径/链接按原始素材形态记录；整理时间由用户提供或交互确认，**不在 skill 内取系统时间**。 |
+| 核心观点 | 浓缩成一句话主轴；话题来源观点缺失时标注待用户确立 | 优先从 raw-source.md「提取要点 → 核心观点」归纳。 |
+| 关键论据素材 | 归纳支撑观点的论据、数据、例子 | 取自 raw-source.md「提取要点 → 关键论据素材」。 |
+| 可引用金句 | 挑出适合直接用的原句/感悟 | 取自 raw-source.md「提取要点 → 可引用金句」。 |
+| 受众 | 从素材推断；推断不出则标注待补 | 感悟文档通常缺失，链接/话题可推断。 |
+| 备注 | 风格倾向、禁忌、平台倾向建议、待深入点 | 感悟文档带入「待深入」；链接/话题加原创性提醒。 |
 
 整理时遵循「改造而非创作」铁律：只归纳提炼素材里已有的信息，不编造素材里没有的论据和观点。素材不足的字段标注「待补」，不强填。
 

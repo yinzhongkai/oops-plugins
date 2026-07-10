@@ -1,6 +1,6 @@
 ---
 name: gather
-description: This skill should be used when the user invokes "/inkstone:gather", asks to "采集素材", "把这个感悟采集一下", "抓取这个链接", "搜一下这个话题", "整理素材来源", "gather sources", or provides a reading-notes file path / a URL / a topic to be collected as raw material for copywriting. Collects heterogeneous sources (bookworm reading notes, web links, topics) into raw material, decides which copywriting subdirectory the output belongs to, and establishes the 选题 directory. 触发于采集阅读感悟、抓取链接、搜索话题作为文案素材时。
+description: This skill should be used when the user invokes "/inkstone:gather", says "采集素材", "把这个感悟采集一下", "抓取这个链接", "搜一下这个话题", or provides a bookworm reading-notes file path, a URL, or a topic to collect as raw material for copywriting.
 ---
 
 # 前采集素材
@@ -26,11 +26,11 @@ description: This skill should be used when the user invokes "/inkstone:gather",
 
 | 形态 | 来源类型 | 采集手法 | 详见 |
 |------|---------|---------|------|
-| 文件路径（.md / 含 `books/` 前缀） | book（感悟文档） | Read 读取 + 提取关键章节 | `references/from-doc.md` |
-| 网址（http/https） | url（链接） | WebFetch 抓取 + 清洗正文 | `references/from-url.md` |
-| 自然语言话题描述 | topic（话题） | WebSearch 搜资料 + 参考竞品 | `references/from-topic.md` |
+| 文件路径（.md / 含 `books/` 前缀） | book（感悟文档） | `Read` 读取 + 提取关键章节 | `references/from-doc.md` |
+| 网址（http/https） | url（链接） | `WebFetch` 抓取 + 清洗正文 | `references/from-url.md` |
+| 自然语言话题描述 | topic（话题） | `WebSearch` 搜资料 + 参考竞品 | `references/from-topic.md` |
 
-本表即前端来源登记表——新增来源类型时在此加一行 + 加 `references/<来源>.md`（详见 `../methodology/references/pipeline.md` 第 6.3 节「前后端对称扩展」）。
+新增来源类型时，按 `../methodology/references/pipeline.md` 第 6.3 节「前后端对称扩展」登记：在此表加一行，并新增 `references/<来源>.md`。
 
 判断不准时（如路径既是文件又像话题），向用户确认是哪种来源。每种采集手法的详细步骤、清洗规则、健壮性处理见对应 reference。
 
