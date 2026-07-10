@@ -1,0 +1,13 @@
+{
+  "name": "inkstone",
+  "version": "0.1.0",
+  "description": "中文社媒文案改造器。把阅读感悟、链接、话题等素材，按「前采集 → 中整理 → 后适配」三阶段，改造成适合在微信公众号、知乎、小红书发布的文案。前端按来源扩展、后端按平台扩展，结构对称。",
+  "author": {
+    "name": "yinzhongkai",
+    "email": "yinzhongkai@yeah.net"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/yinzhongkai/oops-plugins",
+  "repository": "https://github.com/yinzhongkai/oops-plugins.git",
+  "keywords": ["writing", "copywriting", "wechat", "zhihu", "xiaohongshu", "social-media", "content"]
+}

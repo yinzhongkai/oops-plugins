@@ -1,0 +1,5 @@
+# 本地配置
+.claude/*.local.md
+
+# 用户文案产物（运行时由用户在项目根的 copywriting/ 下生成，按用户意愿纳入版本控制）
+# 注：本插件不生成 Python 缓存，无需排除 __pycache__
